@@ -21,6 +21,16 @@ h1 {
     font-weight: bold;
 }
 
+.background-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite que o mouse passe por cima */
+    z-index: -1; /* Coloca atrás do conteúdo */
+    transition: background-image 0.1s ease;
+}
 /* Navbar */
 .navbar {
     display: flex;
@@ -84,6 +94,7 @@ h1 {
 }
 
 .nav-links .hello a {
+    margin-top: 10px;
     background-color: #232D3F; 
     color: #0F0F0F;
     padding: 10px 20px;
@@ -137,7 +148,7 @@ h1 {
 .hero-text-container {
     background-color: #232D3F; /* Fundo azul escuro */
     padding: 20px;
-    opacity: 0.8;
+
 }
 
 .hero-text {
