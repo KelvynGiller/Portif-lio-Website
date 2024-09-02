@@ -1,82 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Website</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <a href="#">Portfolio</a>
-        </div>
-        <div class="navigation">
-            <nav>
-                <ul>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Section -->
-    <main>
-        <section class="hero">
-            <div class="hero-container">
-                <img class="profile-photo" src="./images/WhatsApp Image 2024-08-14 at 17.15.15.jpeg" alt="Profile Photo">
-                <div class="hero-text">
-                    <h1>Kelvyn Giller</h1>
-                    <h2>About me:</h2>
-                    <p>
-                        This is a brief introduction or description. You can add some information about yourself here.
-                    </p>
-                </div>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/WhatsApp Image 2024-09-02 at 16.37.42.jpeg" alt="Profile Photo" class="profile-photo">
+                <br>
+                <a href="#">Kelvyn Giller</a>
+                <h1>Full Stack Engineer</h1>
             </div>
-        </section>
-        <section class="content">
-            <h1>Projects</h1>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Java Script Syntax</h3>
-                    <p>Fortune Cookie: Open and reveal your lucky mesage!</p>
-                </div>
-                <div class="card">
-                    <h3>Project 2 WIP</h3>
-                    <p>Work in progress</p>
-                </div>
-                <div class="card">
-                    <h3>Project 3 WIP</h3>
-                    <p>Work in progress</p>
-                </div>
-            </div>
-        </section>
-       
-    
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-logo">
-            <a href="#">Portfolio</a>
-            <!-- Social Media Icons -->
+            <ul class="nav-links">
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li class="hello"><a href="#">Say Hello!</a></li>
+            </ul>
             <div class="social-icons">
                 <a href="#"><img src="./images/icons8-git-50.png" alt="Github"></a>
-                <a href="#"><img src="./images/icons8-insta-50.png" alt="Instagram"></a>
                 <a href="#"><img src="./images/icons8-linkedin-50.png" alt="LinkedIn"></a>
             </div>
-        </div>
+        </nav>
 
-        <div class="footer-links">
+        <main class="content">
+            <section class="hero">
+                <div class="hero-container">
+                    
+                    <div class="hero-text-container">
+                        <h1>Welcome.</h1>
+                        <h2>About me:</h2>
+                        <p class="hero-text">TLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lectus diam, aliquam ac nulla quis, cursus pharetra neque. Ut efficitur neque ut tellus sollicitudin consequat. Nam congue purus a nisl sollicitudin dignissim ut nec lacus. Duis elementum quam non metus porta, non elementum diam facilisis. Ut porttitor tincidunt eleifend. Ut nisl orci, euismod id elementum vitae, pellentesque id lectus. Aliquam non felis a urna volutpat consectetur.
 
+                            Nulla mollis, ipsum eu dignissim molestie, est nibh sodales leo, nec laoreet mi enim et mi. Cras sed commodo enim. Aenean varius quis justo quis hendrerit. Praesent dapibus nulla nunc, vel malesuada risus vulputate non. Nullam aliquam ultricies maximus. Proin scelerisque imperdiet turpis, vitae maximus felis hendrerit at. Quisque pretium justo eget risus laoreet pellentesque. Duis imperdiet arcu nec erat luctus, quis sodales est facilisis. Fusce hendrerit finibus magna, ut imperdiet neque blandit ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <h1>Projects</h1>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>JavaScript Syntax</h3>
+                        <p>Fortune Cookie: Open and reveal your lucky message!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Project 2 WIP</h3>
+                        <p>Work in progress</p>
+                    </div>
+                    <div class="card">
+                        <h3>Project 3 WIP</h3>
+                        <p>Work in progress</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href="#">Portfolio</a>
+              
             </div>
-        </div>
-    </footer>
+            <div class="footer-links">
+                <!-- Footer links can go here -->
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
