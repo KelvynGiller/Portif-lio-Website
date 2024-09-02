@@ -79,6 +79,7 @@ h1 {
 
 .nav-links li {
     margin: 5px 0;
+    font-size: 20px;
 }
 
 .nav-links a {
@@ -193,24 +194,24 @@ h1 {
 
 /* Footer */
 .footer {
-    background-color: #232D3F; /* Azul escuro */
+    background-color: #232D3F; 
     padding: 30px 40px;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: 2px solid #005B41; /* Verde escuro */
-    margin-top: auto; /* Garante que o footer fique na parte inferior */
+    border-top: 2px solid #005B41; 
+    margin-top: auto; 
 }
 
 .footer-logo a {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-    color: #008170; /* Verde mais claro */
+    color: #008170;
 }
 
-/* Responsividade */
+/* Responsivity */
 @media (max-width: 768px) {
     .navbar {
         position: relative;
