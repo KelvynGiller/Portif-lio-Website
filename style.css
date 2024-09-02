@@ -47,7 +47,23 @@ h1 {
     z-index: 1;
     text-align: center; /* Alinha texto e links ao centro */
     border-right: 3px solid #005B41;
-}
+    transition: background 0.3s ease;
+    z-index: 1;
+    overflow: hidden; /* Garante que o efeito de brilho não saia da navbar */
+    }
+      
+    .navbar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.5), transparent);
+        pointer-events: none; /* Garante que o pseudo-elemento não interfira com a navegação */
+        z-index: -1; /* Coloca o brilho atrás do conteúdo da navbar */
+        transition: background 0.3s ease; /* Suaviza o efeito de brilho */
+    }
 
 .navbar .logo img {
     margin-top: 30px;
@@ -68,6 +84,7 @@ h1 {
 
 .navbar h1 {
     font-size: 32px;
+    font-weight: normal;
     color: #008170;
     margin: 5px 0;
 }
@@ -144,6 +161,11 @@ h1 {
     align-items: center;
     gap: 20px;
     margin-right: 40px;
+}
+.hero-container h1{
+    font-size:60px;
+    font-weight: normal;
+    
 }
 
 .hero-text-container {
