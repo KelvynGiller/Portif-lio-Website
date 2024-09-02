@@ -213,7 +213,58 @@ h1 {
     color: #008170; /* Verde mais claro */
     margin-bottom: 10px;
 }
+/* Contact */
+.contact {
+    background-color: #232D3F; /* Azul escuro ou qualquer cor que se encaixe no design */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #FFFFFF; /* Texto branco para contraste */
+}
 
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #005B41; /* Cor da borda */
+    border-radius: 4px;
+    background-color: #FFFFFF; /* Cor de fundo do input */
+    color: #000000; /* Texto do input */
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.contact-form button {
+    background-color: #005B41; /* Cor do botão */
+    color: #FFFFFF; /* Texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #004c3f; /* Cor do botão ao passar o mouse */
+}
 /* Footer */
 .footer {
     background-color: #232D3F; 
