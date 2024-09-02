@@ -112,6 +112,13 @@ h1 {
     width: 24px;
     margin: 0 10px;
     filter: brightness(0) invert(1); /* Ícones em branco */
+    opacity: 50%;
+}
+.social-icons a:hover img {
+    width: 24px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1); /* Ícones em branco */
+    opacity: 100%;
 }
 
 /* Main Content */
