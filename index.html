@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bright-background"></div> <!-- Novo elemento para o efeito de brilho -->
+    <div class="bright-background"></div>
     <div class="container">
-    <div class="background-effect"></div> <!-- Adicione esta linha -->
+    <div class="background-effect"></div> 
     <div class="container">
         <nav class="navbar">
             <div class="logo">
@@ -22,10 +22,10 @@
                 <h1>Full Stack Engineer</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li class="hello"><a href="#">Say Hello!</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li class="hello"><a href="#contact">Say Hello!</a></li>
             </ul>
             <div class="social-icons">
                 <a href="#"><img src="./images/icons8-git-50.png" alt="Github"></a>
@@ -33,7 +33,7 @@
             </div>
         </nav>
 
-        <main class="content">
+        <main class="content" id="aboutme">
             <section class="hero">
                 <div class="hero-container">
                     <div class="hero-text-container">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h1>Projects</h1>
                 <div class="card-container">
                     <div class="card">
@@ -62,13 +62,20 @@
                     </div>
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h1>Skills:</h1>
                 <div class="skill-icon">
+                    <img src="./images/html.png" alt="html">
+                    <img src="./images/icons8-css-50.png" alt="css">
+                    <img src="./images/icons8-javascript-50.png" alt="JavaScript">
+                    <img src="./images/icons8-react-js-50.png" alt="react">
+                    <img src="./images/icons8-redux-50.png" alt="redux">
+                    <img src="./images/icons8-sql-50.png" alt="html">
+                    <img src="./images/icons8-express-js-50.png" alt="express">
                     
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h1>Say hello!</h1>
                 <form action="/submit-form" method="post" class="contact-form">
                     <label for="name">Name:</label>
@@ -90,11 +97,11 @@
                 <a href="#">Portfolio</a>
             </div>
             <div class="footer-links">
-                <!-- Footer links can go here -->
+              
             </div>
         </footer>
     </div>
     </div>
-    <script src="./script.js"></script> <!-- Certifique-se de que o JavaScript está incluído -->
+    <script src="./script.js"></script> 
 </body>
 </html>
